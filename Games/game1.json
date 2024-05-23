@@ -1,0 +1,91 @@
+{
+  "Pieces": [
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 1,
+      "Col": 1,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 5,
+      "Col": 1,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 5,
+      "Col": 5,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 5,
+      "Col": 7,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 6,
+      "Col": 0,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 6,
+      "Col": 2,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 6,
+      "Col": 4,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 6,
+      "Col": 6,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 7,
+      "Col": 1,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 7,
+      "Col": 3,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 7,
+      "Col": 5,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 7,
+      "Col": 7,
+      "IsQueen": false
+    }
+  ],
+  "Turn": "White",
+  "AllowMultipleJumps": false,
+  "Ended": true
+}

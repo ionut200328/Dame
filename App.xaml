@@ -1,0 +1,13 @@
+﻿<Application x:Class="Dame.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Dame"
+             xmlns:viewModel="clr-namespace:Dame.MVVM.ViewModel"
+             xmlns:view="clr-namespace:Dame.MVVM.View"
+             Startup="OnStartup">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type viewModel:GameViewModel}">
+            <view:GameView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>

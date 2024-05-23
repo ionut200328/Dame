@@ -1,0 +1,47 @@
+﻿<Window x:Class="Dame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dame"
+        xmlns:viewmodel="clr-namespace:Dame.MVVM.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+        xmlns:view="clr-namespace:Dame.MVVM.View"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="850">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewmodel:GameViewModel}">
+            <view:GameView />
+        </DataTemplate>
+        <!-- Add other DataTemplates for different view models -->
+    </Window.Resources>
+    <Grid Margin="105,0,0,0">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Column="0" Margin="-103,11,148,413">
+            <MenuItem Header="Game">
+                <MenuItem Header="NewGame"
+                          Command="{Binding NavigateToGameCommand}"
+                          CommandParameter="NewGame"/>
+                <MenuItem Header="Load"
+                          Command="{Binding NavigateToGameCommand}"
+                          CommandParameter="LoadGame"/>
+                <MenuItem Header="Save"
+                          Command="{Binding NavigateToGameCommand}"
+                          CommandParameter="SaveGame"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About"
+                          Command="{Binding AboutCommand}"/>
+            </MenuItem>
+            <MenuItem Header="Statistics"
+                      Command="{Binding StatisticsCommand}"/>
+        </Menu>
+
+        <Frame Content="{Binding NavigationService.CurrentViewModel}" Grid.ColumnSpan="2" Margin="0,1,0,-1"/>
+    </Grid>
+</Window>

@@ -1,0 +1,42 @@
+{
+  "Pieces": [
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 2,
+      "Col": 2,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 5,
+      "Col": 3,
+      "IsQueen": true
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 5,
+      "Col": 5,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 6,
+      "Col": 0,
+      "IsQueen": false
+    },
+    {
+      "Type": "Pawn",
+      "Color": "Black",
+      "Row": 7,
+      "Col": 1,
+      "IsQueen": false
+    }
+  ],
+  "Turn": "White",
+  "AllowMultipleJumps": true,
+  "Ended": true
+}
